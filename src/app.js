@@ -124,7 +124,6 @@ function formatDay(timestamp) {
   return days[day];
 }
 
-
 function displayForecast(response) {
   let forecast = response.data.daily;
 
@@ -168,52 +167,49 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-
 function displayWeather(response) {
-let cityElement = document.querySelector("#city");
-let dateElement = document.querySelector("#date");
-let descriptionElement = document.querySelector("#description");
-let temperatureElement = document.querySelector("#temperature");
-let iconElement = document.querySelector("#icon");
-let humidityElement = document.querySelector("#humidity");
-let windElement = document.querySelector("#wind");
- 
-celsiusTemperature = response.data.main.temp;
+  let cityElement = document.querySelector("#city");
+  let dateElement = document.querySelector("#date");
+  let descriptionElement = document.querySelector("#description");
+  let temperatureElement = document.querySelector("#temperature");
+  let iconElement = document.querySelector("#icon");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
 
-cityElement.innerHTML = response.data.name;
-dateElement.innerHTML = formatDate(response.data.dt * 1000);
-descriptionElement.innerHTML = response.data.weather[0].description;
-temperatureElement.innerHTML = Math.round(celsiusTemperature);
-humidityElement.innerHTML = response.data.main.humidity;
-windElement.innerHTML = Math.round(response.data.wind.speed);
+  celsiusTemperature = response.data.main.temp;
 
-iconElement.setAttribute(
+  cityElement.innerHTML = response.data.name;
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+
+  iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-getForecast(response.data.coord);
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
   let apiKey = "d122489789ce9e01ba81bb0f4a64028b";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
- }
+}
 
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input").value;
-  searchCity(cityInputElement.value);
+  searchCity(cityInputElement);
 }
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 searchCity("Sydney");
-
-
 
 // function displayWeather(reply) {
 //   document.querySelector("#city").innerHTML = reply.data.name;
@@ -227,4 +223,3 @@ searchCity("Sydney");
 // }
 
 // search("Perth");
-
