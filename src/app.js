@@ -118,6 +118,19 @@ form.addEventListener("submit", handleSubmit);
 // ********************************************
 // ********************************************
 
+function displayWeather(reply) {
+  document.querySelector("#city").innerHTML = reply.data.name;
+  document.querySelector("#temperature").innerHTML = Math.round(
+    reply.data.main.temp
+  );
+
+  document.querySelector("#humidity").innerHTML = reply.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(reply.data.wind.speed);
+  document.querySelector("#description").innerHTML = reply.data.weather[0].main;
+}
+
+
+
 function searchCity(city) {
   let apiKey = "d122489789ce9e01ba81bb0f4a64028b";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -133,4 +146,4 @@ function handleSubmit(event) {
 }
 
 search("Perth");
-searchCity("Melbourne");
+searchCity("Sydney");
