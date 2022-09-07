@@ -114,12 +114,9 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-
-
 // ********************************************
 // ********************************************
 // ********************************************
-
 
 function searchCity(city) {
   let apiKey = "d122489789ce9e01ba81bb0f4a64028b";
@@ -135,6 +132,5 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
-
-search("Melbourne");
+search("Perth");
 searchCity("Melbourne");
