@@ -1,5 +1,5 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 h1 {
@@ -26,19 +26,24 @@ li {
   line-height: 19px;
 }
 
+.climaLogo {
+  margin: 15px;
+}
+
 li:first-letter {
   text-transform: capitalize;
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
 }
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
+  border: 1px solid #adc7e7;
+  border-radius: 3px;
+  width: 800px;
 }
 
 .overview {
@@ -90,4 +95,27 @@ li:first-letter {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+
+
+#city-input {
+ width: 380px;
+}
+
+#search-button {
+  color: #000000;
+  background-color: rgb(90, 137, 224);
+  border: 1px solid rgba(18, 89, 122, 0.945);
+  font-size: 14px;
+  padding: 0 !important;
+
+}
+
+#current-location-button {
+  color: #000000;
+  background-color: rgb(114, 189, 114);
+  border: 1px solid rgba(18, 89, 122, 0.945);
+  font-size: 14px;
+
+
 }

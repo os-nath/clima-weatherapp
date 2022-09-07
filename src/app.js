@@ -114,4 +114,27 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("New York");
+
+
+// ********************************************
+// ********************************************
+// ********************************************
+
+
+function searchCity(city) {
+  let apiKey = "d122489789ce9e01ba81bb0f4a64028b";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeather);
+  console.log(apiUrl);
+  console.log(axios);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#city-input").value;
+  searchCity(city);
+}
+
+
+search("Melbourne");
+searchCity("Melbourne");
