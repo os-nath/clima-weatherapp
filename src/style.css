@@ -109,7 +109,8 @@ li:first-letter {
   font-size: 14px;
   padding: 0 !important;
   width: 120px;
-margin-left: 30px;
+margin-left: 30px; 
+margin-right: 30px;
 }
 
 #current-location-button {
@@ -118,6 +119,11 @@ margin-left: 30px;
   border: 1px solid rgba(18, 89, 122, 0.945);
   font-size: 14px;
   width: 120px;
-  margin-left: 20px;
-  margin-right: 80px;
+  margin-left: 30px; 
+margin-right: 30px;
+}
+
+#btn-div {
+margin-left: 0;
+padding: 0 !important;
 }
