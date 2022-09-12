@@ -104,18 +104,20 @@ li:first-letter {
 
 #search-button {
   color: #000000;
-  background-color: #428bc2;
+  background-color: #3f83b8ee;
   border: 1px solid rgba(18, 89, 122, 0.945);
   font-size: 14px;
   padding: 0 !important;
-
+  width: 120px;
+margin-left: 30px;
 }
 
 #current-location-button {
   color: #000000;
-  background-color: rgba(127, 214, 127, 0.74);
+  background-color: #dbbc54ee;
   border: 1px solid rgba(18, 89, 122, 0.945);
   font-size: 14px;
-
-
+  width: 120px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
