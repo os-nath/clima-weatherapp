@@ -209,7 +209,7 @@ function handleSubmit(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-searchCity("Sydney");
+searchCity("Belo Horizonte");
 
 // function displayWeather(reply) {
 //   document.querySelector("#city").innerHTML = reply.data.name;
