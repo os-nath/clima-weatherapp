@@ -195,6 +195,7 @@ function displayWeather(response) {
 }
 
 
+
 function displayFahrenheitTemperature(event) {
 event.preventDefault();
 let temperatureElement = document.querySelector("#temperature");
@@ -225,6 +226,7 @@ function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 }
+
 
 function handleSubmit(event) {
   event.preventDefault();

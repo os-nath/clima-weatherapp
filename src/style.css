@@ -21,7 +21,6 @@ li {
   margin: 0;
   margin-left: 15px;
   padding: 0;
-
   color: #016fc5;
   font-size: 16px;
   font-weight: 100;
@@ -46,7 +45,14 @@ li:first-letter {
 
 .overview {
   margin-bottom: 20px;
+}
 
+#MainWeatherDiv {
+  width: 500px;
+}
+
+.weather-temperature {
+  width: 200px;
 }
 
 .weather-temperature img {
@@ -76,6 +82,10 @@ li:first-letter {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+#MainWeatherSpecs {
+  margin-top: 10px;
 }
 
 .weather-forecast {
