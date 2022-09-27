@@ -1,5 +1,6 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F1EFF2;
 }
 
 h1 {
@@ -35,25 +36,27 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+#description:first-letter {
+    text-transform: capitalize;
+}
+
 .weather-app-wrapper {
   max-width: 800px;
   margin: 50px auto;
 }
 
 .weather-app {
-  padding: 20px;
+   background-color: #ffffff;
+  padding: 40px;
   border: 1px solid #adc7e7;
-  border-radius: 3px;
+  border-radius: 8px;
   width: 800px;
 }
 
 #overview {
+  margin-top: 10px;
   margin-bottom: 20px;
-}
-
-#MainWeatherDiv {
-  width: 500px;
-}
+  }
 
 .weather-temperature {
   width: 200px;
@@ -90,7 +93,8 @@ li:first-letter {
 
 #MainWeatherSpecs {
   margin-top: 10px;
-}
+  text-align: center;
+} 
 
 .weather-forecast {
   margin-top: 20px;
