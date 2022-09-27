@@ -19,28 +19,29 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-
-           <div class="row">
-            <div class="col-6">
-
-          <a href="#" target=""_blank>
+            <a href="#" target=""_blank>
             <img src="images/climaWeatherAppLogo.png" width="148" height="66" class="climaLogo" alt="Clima Logo"></a>
           <br />
           <br />
 
+         <div class="row">
+            <div class="col-6">
     <div class="overview">
         <h1 id="city"></h1>
         <ul>
-          <li>Last updated: <span id="date"></span></li>
+          <li><span id="date"></span> </li>
           <li id="description"></li>
-        </ul>
+          </ul>
+
     </div>
     </div>
     </div>
  
     <div class="row" id="MainWeatherDiv">
-    <div class="col-6">
+      <div class="col-6">
+     
     <div class="clearfix weather-temperature">
+   
        <img src="" alt="Clear" id="icon" class="float-left" />
     <div class="float-left">
       <strong id="temperature"></strong>
@@ -53,14 +54,17 @@
 
    <div class="col-6" id="MainWeatherSpecs">
       <ul>
-         <li>Humidity: <span id="humidity"></span>%</li>
-          <li>Wind: <span id="wind"></span> km/h</li>
+         <li>Humidity: <span><strong id="humidity"></span>%</strong></li>
+          <li>Wind: <span><strong id="wind"></span> km/h</strong></li>
       </ul>
     </div>
+
     </div>
+    <br />
     <div class="weather-forecast" id="forecast"></div>
 <br />
 <br />
+
 
     <form class="search-form" id="search-form">
     <div class="row">
