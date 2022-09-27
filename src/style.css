@@ -27,6 +27,10 @@ li {
   line-height: 19px;
 }
 
+#humidity li {
+color: yellowgreen;
+}
+
 li:first-letter {
   text-transform: capitalize;
 }
