@@ -116,31 +116,31 @@ li:first-letter {
 }
 
 #city-input {
- width: 380px;
+ width: 500px;
  border: none;
-    border-radius: 6px;
-    color: #000000;
-    background-color: rgba(157, 193, 209, 0.2);
+border-radius: 6px;
+color: #000000;
+background-color: rgba(1, 111, 197, 0.1);
 }
 
 #search-button {
   color: #000000;
-  background-color: #3f83b8ee;
+  background-color: rgba(1, 111, 197, 0.74);
   border: 1px solid rgba(18, 89, 122, 0.945);
   font-size: 14px;
   padding: 0 !important;
-  width: 150px;
+  width: 200px;
   height: 38px;
 }
 
-#current-location-button {
+/* #current-location-button {
   color: #000000;
-  background-color: #dbbc54ee;
+  background-color: #E8B923;
   border: 1px solid rgba(18, 89, 122, 0.945);
   font-size: 14px;
   width: 150px;
   height: 38px;
-}
+} */
 
 #btn-div {
 margin-left: 0 !important;
