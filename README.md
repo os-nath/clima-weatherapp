@@ -1,6 +1,5 @@
-# week7-ns-prototype-weatherapp
-
 Clima
+
 
 
 💡What is Clima?
@@ -13,6 +12,9 @@ I named my weather app as Cima and created the logo below:
 
 Clima is capable of searching for any city in the world and display its current weather as well as 6 days forecast. 
 It is composed of a search engine, API integration, wind speed, weather description, weather icons, 6 days forecast, Celsius and Fahrenheit unit conversion for the current weather.
+
+
+
 
 
 🤸 Getting Started
